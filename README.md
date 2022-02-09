@@ -1,1 +1,5 @@
 # Computer-Science-Assignment
+
+Please find attached the code used for my Computer Science assignment, for the course Computer Science for Business Analytics, part of the master's degree Quantitative Markerting and Business Analytics at the Erasmus University Rotterdam. The goal of the assignment was to find duplicates of products in a large set of tv products whilst combatting scalibility issues. In particular, Locality-Sensitive Hashing was applied on a specific set of model words, followed by Jaccard similarity and hierarchical clustering.
+
+In the code, first packages are installed, data is imported ("TVs-all-merged.json") and cleaned. Next, a set of model words is established. Then, a binary matrix is constructed, where the set of model words is compared to each of the products' titles with or without key-value pair features. Next, this binary matrix is transformed into a signature matriux as an input for LSH. Given the candidate pairs coming out of LSH Jaccard similarity is applied to form a distance matrix, and lastly hierarchical clustering is applied to find supposed duplicates.
